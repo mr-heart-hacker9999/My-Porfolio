@@ -2,7 +2,7 @@
 const menu = document.querySelector(".menu");
 const navbar = document.querySelector(".side-navbar");
 const logo = document.querySelector(".logo");
-const form = document.querySelector("messageSubmitButton");
+const form = document.querySelector("#messageSubmitButton");
 const header = document.querySelector("header");
 
 // Navbar Setup
