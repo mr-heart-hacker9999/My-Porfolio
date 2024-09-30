@@ -1,0 +1,212 @@
+@media screen and (max-width:1000px){
+    .innerDiv img{
+        width: 40vw;
+        height: 40vw;
+    }
+    .secondLine{
+        margin-top: auto;
+    }
+    .welcomeHeading{
+        font-size: 4vw;
+    }
+}
+
+
+@media screen and (max-width:835px) {
+   
+
+    .top-navbar{
+        display: none;
+    }
+    .main{
+        margin-top: 70px;
+    }
+
+
+
+
+
+    .outerLogo{
+        width:100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu{
+        display: block;
+    }
+    .leftDiv{
+        width: 100%;
+        margin: 0px 20px;
+    }
+    .innerDiv img{
+        width: 250px;
+        height: 250px;
+        margin-top: 10px;
+    }
+
+.aboutDiv{
+    width: 90%;
+}
+
+
+    .aboutDivSection{
+        margin-top: 230px;
+    }
+
+    .firstLine p,.secondLine p{
+ 
+        font-size: 18px;
+    }
+
+    .firstLine h6,.secondLine h6{
+        font-size: 20px;
+    }
+
+    .welcomeHeading{
+        font-size: 30px;
+    }
+}
+
+
+
+@media  screen and (max-width:799px) {
+    .rightDiv{
+        margin-top: 50px;
+    }
+    
+}
+
+@media screen  and (max-width:680px){
+    .hireMeDiv{
+        width: 480px;
+    }
+}
+
+
+
+@media screen and (max-width:496px) {
+    .aboutDivSection{
+        margin-top:290px ;
+    }
+    .hireMeDiv{
+    width: 90%;
+    }
+
+    .hireMeDiv b{
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-size:x-large;
+        padding: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+    #hireMeForm{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+           
+        
+        }
+
+    #hireMeForm input{
+        height: 15px;
+         width: 90%;
+         /* grid-gap: 20px; */
+         padding: 5px;
+     
+     
+     }
+
+     #hireMeForm select{
+        width:44%;
+        height: 30px;
+        cursor: pointer;
+    }
+
+
+    #hireMeTextArea{
+        width: calc(90% );
+        height: 150px;
+        padding: 5px;
+        font-size: 15px;
+        resize: none;
+    }
+
+
+     #hireMeForm #hireMeSubmitBtn{
+        background-color:gray;
+        width: 180px;
+        height: 40px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 20px;
+        border: none;
+        font-size: large;
+        font-weight: 600;
+        color: white;
+    }
+
+
+    .hireMeDiv .crossbtn{
+        position: fixed;
+        right:1px ;
+        top: 1px;
+        color: white;
+        background-color: black;
+        padding: 0px 5px 2px  5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+}
+
+
+@media screen and (max-width:416px) {
+    .aboutDivSection{
+        margin-top: 415px;
+    }
+    .goToTop{
+        position: fixed;
+        right: 5px;
+        bottom: 50px;
+    }
+}
+
+@media screen and (max-width:341px) {
+    .aboutDivSection{
+        margin-top: 500px;
+    }
+    #contectForm{
+        width: 83%;
+    }
+    #contectForm input {
+        width:80%;
+    }
+    #messageInput{
+        width: 80%;
+    }
+    .innerDiv img{
+        margin-bottom: 100px;
+    }
+    .footerLinks{
+        width: 250px;
+    }
+    .footerLinks .fa-brands,
+    .fa-solid{
+        font-size: 20px;
+    }
+    }
+
+
+@media screen and (max-width:264px) {
+    .aboutDivSection{
+        margin-top: 415px;
+    }
+}
