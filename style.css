@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Play:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #00003B;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 5px aqua;
+    z-index: 999;
+}
+
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    /* z-index: 999; */
+    background-color: #00003B;
+}
+
+nav .logo {
+    color: white;
+    margin-left: 2vw;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav .logo .maurya {
+    color: aqua;
+}
+
+.top-navbar li {
+    display: inline;
+    margin-right: 3vw;
+
+}
+
+.top-navbar li a {
+    color: white;
+    transition: 0.2s;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.top-navbar li a:hover {
+    color: aqua;
+}
+
+nav .hirebtn {
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 17px;
+    transition: 0.2s;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid aqua;
+}
+
+nav .hirebtn:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.side-navbar {
+    position: fixed;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    height: 100%;
+    top: 50px;
+    transform: translateX(-100%);
+    background-color: #00003B;
+    transition: 1s;
+    z-index: -100;
+    /* margin: 10px 0px; */
+    /* display: none; */
+}
+
+.side-navbar li {
+    width: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+    
+}
+
+.side-navbar li a{
+    width: 100%;
+    display: inline-block;
+    padding: 3px 0px;
+}
+
+.side-navbar li:last-child{
+    margin-bottom: 50px;
+}
+
+.side-navbar li:hover {
+    background-color: #000042;
+
+}
+
+.side-navbar li a {
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+}
+
+.side-navbar li a:hover {
+    color: aqua;
+}
+
+.menu {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu:hover {
+    color: aqua;
+}
+
+
+
+/* Main Sction  */
+
+.main {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    /* margin:150px 20px 0px 20px; */
+}
+
+.welcomeHeading {
+    color: white;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-family: "Play", sans-serif;
+}
+
+.leftDiv {
+
+    width: 50%;
+    text-align: center;
+    /* margin-left: 100px; */
+    text-align: center;
+}
+
+.Iam {
+    color: white;
+    display: block;
+    /* margin-left: 100px; */
+    font-size: 20px;
+}
+
+.nameContainer .DivyanshHeading {
+    /* margin-left: 100px;
+    margin-right: 10px; */
+    text-align: center;
+}
+
+.nameContainer h1 {
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.nameContainer h1:hover {
+    filter: drop-shadow(0px 0px 15px aqua);
+}
+
+.nameContainer .mauryaHeading {
+    color: aqua;
+}
+
+.nameContainer .quotation{
+    color: #4F86F7;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 5px 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.slogan {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.rightDiv {
+    text-align: center;
+    /* width: 500px; */
+
+    /* margin-right: 100px; */
+}
+
+.innerDiv {
+    border-radius: 50%;
+  
+}
+
+.innerDiv img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: aqua;
+    transition: 0.5s;
+}
+
+.innerDiv img:hover {
+    /* filter: drop-shadow(0px 0px 25px  aqua); */
+    box-shadow: 0px 0px 50px 5px aqua;
+}
+
+
+
+/* Skills Div  */
+
+
+
+.SkillsMainDiv {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+
+}
+
+#skills {
+
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 2px aqua;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+    margin: 100px auto 0px auto;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 0px;
+
+}
+
+
+.skillsDiv {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.leftSkillsDiv {
+    width: 49%;
+    height: auto;
+    background-color: red;
+}
+
+.middleLine {
+    height: 500px;
+    width: 5px;
+    background-color: aqua;
+    border-radius: 5px;
+    position: relative;
+}
+
+.middleLine span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+
+.rightSkillsDiv {
+    width: 49%;
+    height: auto;
+    background-color: yellow;
+}
+
+
+.skillsDiv .htmlDiv,
+.JavaScriptDiv,
+.pythonDiv,
+.cssDiv,
+.reactDiv {
+    height: 200px;
+    width: 400px;
+    background-color: aqua;
+    text-align: center;
+    margin: auto;
+    border: 2px solid red;
+}
+
+
+.firstLine {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+}
+
+.firstLine h6,
+.secondLine h6 {
+    color: black;
+    font-size: 23px;
+    background-color: rgb(19, 170, 170);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.firstLine p,
+.secondLine p {
+    font-size: 20px;
+    color: white;
+    margin: 5px 5px 0px 5px;
+}
+
+.secondLine {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+}
+
+.cards {
+    margin: 10px 0px;
+    height: 200px;
+    width: 250px;
+    /* background-color: aqua; */
+    background: #00003B;
+    border-radius: 15px;
+    /* outline: 2px solid darkblue; */
+    transition: 0.3s;
+    position: relative;
+}
+
+.cards::after, .cards::before{
+    content: '';
+    left: -5px;
+    position: absolute;
+    top: -5px;
+    background: linear-gradient(45deg,#8e44ad ,#138d75,#ba4a00,#0b5345 ,#6495ED,#ff00ff,#6e0dd0,#ff3300,#099fff);
+    background-size: 400%;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    /* height: 100%;
+    width: 100%; */
+    z-index: -1;
+    animation: BorderColor 20s    infinite linear;
+    border-radius: 20px;
+}
+
+.cards::after{
+    filter: blur(30px);
+}
+
+
+@keyframes BorderColor {
+    0%{
+        background-position: 0 0;
+    }
+    50%{    
+        background-position: 800% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+
+
+
+/* .cards:hover {
+    box-shadow: 0px 0px 25px 2px aqua;
+    outline: none;
+    transform: scale(1.07);
+} */
+
+
+
+/* Projects Section  */
+
+
+#projects {
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 2px aqua;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    margin: 100px auto 0px auto;
+    font-size: 25px;
+    padding: 5px 0px;
+
+
+}
+
+.projectsDiv h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+
+/* TeamMates Section  */
+
+#team  #teamHeading{
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 2px aqua;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    margin: 100px auto 0px auto;
+    font-size: 25px;
+    padding: 5px 0px;
+    display: block;
+}
+.teamImageDiv{
+    margin-top: 30px;
+}
+
+/* .outerCardDiv{
+    z-index: -1;
+} */
+
+.outerCardDiv div {
+    height: 330px;
+    width: 265px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    
+}
+.outerCardDiv{
+    height: 330px;
+    box-shadow: 0px 0px 30px 5px rgb(6, 97, 97);
+    width: 265px;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+    
+}
+.outerCardDiv .cardDiv{
+    position: absolute;
+    height: 330px;
+    width: 265px;
+    /* object-fit: contain; */
+    /* aspect-ratio: 3/2; */
+    backface-visibility: hidden;
+   
+    
+}
+
+/* .cardDiv img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+} */
+.outerCardDiv .divDetails{
+    display: flex;
+    position: absolute;
+    height: 330px;
+    transform: rotateY(180deg) ;
+    width: 265px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items:center;
+    backface-visibility: hidden;
+    background-color: aqua;
+}
+.outerCardDiv .divDetails h1{
+    font-size: 30px;
+    text-align: center;
+}
+.outerCardDiv .divDetails b{
+    font-size: 25px;
+    text-align: center;
+}
+.outerCardDiv .divDetails p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.outerCardDiv:hover {
+    transform:perspective(500px) rotateY(180deg);
+    box-shadow: 0px 0px 20px 5px aqua;
+}
+
+
+
+.firstLineDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+}
+
+.secondLineDiv {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.teamImageDiv img {
+
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* About Section  */
+
+#about {
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 2px aqua;
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 5px 0px;
+
+}
+
+.aboutDiv {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    transition: 0.3s;
+    /* background-image: url(/Images/fiber.jpg); */
+    /* box-shadow: 0px 0px 20px 5px rgb(2, 70, 70); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    background-color: #00003B;
+    padding-bottom: 10px;
+
+}
+
+
+.shine::before,.shine::after{
+    content: '';
+    left: -5px;
+    position: absolute;
+    top: -5px;
+    background: linear-gradient(45deg,#8e44ad ,#138d75,#ba4a00,#0b5345 ,#6495ED,#ff00ff,#6e0dd0,#ff3300,#099fff);
+    background-size: 400%;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    z-index: -1;
+    animation: colored 20s    infinite linear;
+    border-radius: 20px;
+}
+
+
+.shine::before{
+    filter: blur(30px);
+}
+
+
+
+@keyframes colored {
+    0%{
+        background-position: 0 0;
+    }
+    50%{    
+        background-position: 800% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.aboutDiv p {
+    color: white;
+    margin: 20px 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+.aboutMe {
+    margin: 20px 0px 20px 0px;
+    /* background-color: aqua; */
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    /* border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+}
+.outerMiddleImageDiv{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.middleImage{
+    background-color: darkblue;
+    border-radius: 50%;
+}
+.middleImage img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.aboutDiv h1{
+    color: white;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.links {
+    display: flex;
+    width: 250px;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+.fa-brands,
+.fa-solid {
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#contect {
+    margin: 40px auto 20px auto;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 2px aqua;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0px;
+
+}
+
+.contectBox {
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+#contectForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 5px aqua;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#contectForm b {
+    color: white;
+    width: 100%;
+    text-align: center;
+    /* background-color: #808080; */
+    font-size: 25px;
+    padding: 10px;
+}
+
+#contectForm input {
+    height: 30px;
+    width: 300px;
+    margin: 5px 0px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: 1px solid gray;
+}
+
+/* form input:focus{
+    outline: 2px solid green;
+} */
+
+#messageInput {
+    height: 129px;
+    width: 295px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+}
+
+#messageSubmitButton {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: aqua;
+    border: none;
+    transition: 0.3s;
+}
+
+#messageSubmitButton:hover {
+    box-shadow: 0px 0px 20px 5px aqua;
+}
+
+
+/* Footer Section  */
+
+
+
+.footerDiv{
+    margin-top: 50px;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+#footer{
+    width: 100%;
+    background-color: black;
+    height: 15rem;
+}
+
+#footer h3{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+}
+#footer b{
+    color:  white;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin: 20px 5px 0 5px;
+}
+
+.footerLinks{
+   margin: 30px auto 0 auto;
+   display: flex;
+   justify-content: space-evenly;
+   width:300px;
+   
+}
+
+/* Go To Top Button  */
+
+
+.goToTop{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+
+.goToTop .gototopImage{
+    width: 50px;
+    background-color:aqua;
+    border-radius: 50%;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: none;
+}
+.goToTop .gototopImage:hover{
+    box-shadow: 0px 0px 20px 2px aqua;
+}
+.goToTop .gototopImage img{
+    width: 50px;
+}
+
+.hireMeOuterDiv{
+    transition: 0.8s;
+}
+
+.hireMeOuterDivActive{
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   background-color: rgba(0, 0, 0, 0.9);
+   transition: 0.8s;
+    
+}
+
+.hireMeDiv{
+    position: fixed;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 510px;
+    width: 600px;
+    background-color:#099fff;
+    transition: 0.8s;
+}
+
+.hireMeDiv b{
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size:xx-large;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#hireMeForm{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 20px;
+   
+
+}
+
+#hireMeForm input{
+   height: 30px;
+    width: 42%;
+    /* grid-gap: 20px; */
+    padding: 5px;
+
+
+}
+#hireMeForm select{
+    width:44%;
+    height: 40px;
+    cursor: pointer;
+}
+
+#hireMeTextArea{
+    width: calc(90% + 10px);
+    height: 150px;
+    padding: 5px;
+    font-size: 17px;
+    resize: none;
+}
+
+#hireMeForm #hireMeSubmitBtn{
+    background-color:gray;
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+}
+
+.hireMeDiv .crossbtn{
+    position: fixed;
+    right:1px ;
+    top: 1px;
+    color: white;
+    background-color: black;
+    padding: 0px 5px ;
+    font-size: 25px;
+    cursor: pointer;
+}
