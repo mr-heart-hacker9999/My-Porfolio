@@ -137,7 +137,9 @@ const selectWorkType = document.querySelector("#workType");
 const selectCategory = document.querySelector("#category");
 const hireMeTextArea = document.querySelector("#hireMeTextArea");
 const hireMeSubmitBtn = document.querySelector("#hireMeSubmitBtn");
-
+for (i = 0; i < hirebtn.length; i++) {
+     hirebtn[i].addEventListener("click",oninputfunction); 
+}
 
 fullname.addEventListener("input", oninputfunction)
 email.addEventListener("input", oninputfunction)
