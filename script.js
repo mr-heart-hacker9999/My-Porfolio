@@ -153,6 +153,7 @@ function oninputfunction() {
     if (fullname.value != "" && email.value != "" && phone.value != "" && pinCode.value != "" && selectWorkType.value != "select_work" && selectCategory.value != "select_Category" && hireMeTextArea.value != "") {
         hireMeSubmitBtn.style.backgroundColor = "green";
         hireMeSubmitBtn.style.cursor="pointer";
+        hireMeSubmitBtn.disabled=false;
     }
     else {
         hireMeSubmitBtn.style.backgroundColor = "gray";
