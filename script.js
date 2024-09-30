@@ -85,13 +85,6 @@ window.onscroll = function () {
 
 
 
-form.addEventListener("click", eventFunction)
-
-
-function eventFunction(events){
-events.preventDefault();
-}
-
 
 // Hire Me Form Handling 
 
