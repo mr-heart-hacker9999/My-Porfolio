@@ -157,6 +157,7 @@ function oninputfunction() {
     else {
         hireMeSubmitBtn.style.backgroundColor = "gray";
         hireMeSubmitBtn.style.cursor="auto";
+        hireMeSubmitBtn.disabled = true;
     }
 }
 
